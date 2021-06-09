@@ -1,4 +1,4 @@
-import { openDB, deleteDB, wrap, unwrap } from "idb";
+import { openDB, deleteDB } from "idb";
 
 export const initializeDB = async (dbName) => {
   const db = await openDB(dbName, 1, {
